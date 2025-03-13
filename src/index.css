@@ -1,0 +1,23 @@
+/* Reset the default margin on the body element and set font family for text */
+body {
+  margin: 0; /* Remove margin to ensure content starts from the top */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Specify a fallback font stack for the body text */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering on WebKit browsers (e.g., Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Smooth font rendering on macOS Firefox */
+}
+
+/* Define the font family for code elements (e.g., inline code or code blocks) */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Specify a font stack for code elements */
+}
+
+/*
+Resets the default margin on the body element to ensure content starts from the top of the page.
+Specifies a font stack for the body text, including various system fonts and fallbacks to ensure readability.
+Enables font smoothing for better text rendering on WebKit browsers (e.g., Safari) and macOS Firefox.
+Defines a font family for code elements, typically used for displaying code snippets. It provides a font stack with monospace fonts for code readability.
+These styles aim to create a consistent and visually appealing typography for web content and code elements within the web page.
+*/

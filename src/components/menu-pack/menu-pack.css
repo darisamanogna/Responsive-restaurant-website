@@ -1,0 +1,39 @@
+/* Styles for buttons with the class 'filter-btn' */
+.filter-btn {
+    border: 1px solid #f5b70a; /* Add a 1px solid border with the color #f5b70a */
+    padding: 7px 25px; /* Add padding to the button (top/bottom: 7px, left/right: 25px) */
+    background: transparent; /* Set the background as transparent */
+    margin-left: 15px; /* Add left margin of 15px to create spacing between buttons */
+    color: #fff; /* Set the text color to white */
+    border-radius: 5px; /* Apply a 5px border radius for rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer (hand) on hover for better UX */
+}
+
+/* Styles for the menu title with the class 'menu__title' */
+.menu__title {
+    color: #f5b70a; /* Set the text color to #f5b70a */
+}
+
+/* Styles for buttons with the class 'active__btn' */
+.active__btn {
+    background: #f76e11; /* Set the background color to #f76e11 when the button is 'active' */
+}
+
+/* Media query for screens with a maximum width of 992px */
+@media only screen and (max-width: 992px) {
+    .menu__title {
+        font-size: 1.4rem; /* Increase the font size of 'menu__title' to 1.4rem */
+    }
+
+    .filter-btn {
+        padding: 5px 20px; /* Adjust the padding of 'filter-btn' (top/bottom: 5px, left/right: 20px) */
+        font-size: 0.8rem; /* Reduce the font size of 'filter-btn' to 0.8rem */
+    }
+}
+
+/* Media query for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+    .filter-btn {
+        margin-bottom: 15px; /* Add a bottom margin of 15px to 'filter-btn' for spacing */
+    }
+}

@@ -1,0 +1,43 @@
+/* Styles for h6 elements inside .single__testimonial */
+.single__testimonial h6 {
+    color: #f5b70a !important; /* Sets text color to a yellowish color */
+    font-size: 1.1rem; /* Sets font size to 1.1rem */
+}
+
+/* Styles for p elements inside .single__testimonial */
+.single__testimonial p {
+    font-size: 0.8rem; /* Sets font size to 0.8rem */
+    color: #fff; /* Sets text color to white */
+}
+
+/* Media query for screens with a max width of 992px */
+@media only screen and (max-width: 992px) {
+    /* Styles for h2 elements inside .slider__content within this media query */
+    .slider__content h2 {
+        font-size: 1.5rem; /* Sets font size to 1.5rem */
+        margin-bottom: 15px !important; /* Adds a bottom margin of 15px (important is used to override other styles) */
+    }
+
+    /* Styles for p elements inside .single__testimonial within this media query */
+    .single__testimonial p {
+        font-size: 0.7rem; /* Sets font size to 0.7rem */
+    }
+}
+
+/* Media query for screens with a max width of 767px */
+@media only screen and (max-width: 767px) {
+    /* Styles for elements with class .slider__wrapper within this media query */
+    .slider__wrapper {
+        flex-direction: column; /* Changes the flex direction to column layout */
+    }
+
+    /* Styles for elements with class .slider__content within this media query */
+    .slider__content {
+        width: 100% !important; /* Sets the width to 100% (important is used to override other styles) */
+    }
+
+    /* Styles for elements with class .slider__img within this media query */
+    .slider__img {
+        display: none; /* Hides these elements by setting display to none */
+    }
+}

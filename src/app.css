@@ -1,0 +1,66 @@
+/* Import Google Fonts for 'Poppins' and 'Rubik' */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+/* ====================== base style ======================*/
+
+/* Reset styles for all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Use border-box for box model */
+}
+
+body,
+html {
+  background: #0a071a !important; /* Set background color for body and HTML */
+}
+
+section,
+footer {
+  padding: 70px 0px; /* Apply padding to sections and footers */
+}
+
+h1,
+h2 {
+  font-size: 2rem; /* Set font size for h1 and h2 */
+  font-weight: 500; /* Set font weight for h1 and h2 */
+  font-family: "Poppins", sans-serif; /* Use the 'Poppins' font family */
+  color: #f5b70a !important; /* Set text color to gold */
+}
+
+p {
+  font-size: 1rem; /* Set font size for paragraphs */
+  color: #c4c4c4; /* Set text color to light gray */
+  line-height: 30px; /* Set line height for paragraphs */
+  font-family: "Rubik", sans-serif; /* Use the 'Rubik' font family */
+}
+
+a {
+  text-decoration: none; /* Remove underlines from links */
+  color: unset; /* Inherit text color from parent */
+}
+
+i {
+  color: #fff; /* Set icon color to white */
+}
+
+/* Media query for screens with a max width of 767px */
+@media only screen and (max-width: 767px) {
+  section {
+    padding: 40px 0px; /* Reduce section padding for smaller screens */
+  }
+}
+
+/*
+The CSS code you provided is a set of general base styles that can be applied to various elements throughout your web application. It includes styling rules for common HTML elements like headings (h1, h2), paragraphs (p), links (a), and icons (i). Here's a breakdown of which elements these styles are meant to affect:
+h1 and h2: These styles are applied to all h1 and h2 elements in your application, setting their font size, weight, font family, and text color.
+p: These styles are applied to all p (paragraph) elements, setting their font size, color, line height, and font family.
+a: These styles apply to all anchor (a) elements, removing the default underlines and ensuring they inherit their text color from their parent elements.
+i: These styles are applied to all i elements, typically used for icons, setting their color to white.
+The body and html selectors set the background color for the entire page.
+The * selector applies a set of reset styles to all elements, removing default margin and padding and using the border-box box model.
+The section and footer selectors set padding for sections and footers in your application. This padding ensures consistent spacing.
+The @media query specifies responsive styles for screens with a maximum width of 767px. It reduces the padding for sections on smaller screens.
+These styles provide a consistent and coherent visual design for your web application by defining typography, color schemes, and spacing rules that can be applied to various HTML elements as needed. You can apply these CSS rules to specific elements in your application by using class names or IDs to target them and apply the desired styles.
+*/

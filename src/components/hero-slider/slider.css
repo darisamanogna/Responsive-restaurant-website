@@ -1,0 +1,51 @@
+/* Styling for the .btn class */
+.btn {
+    padding: 7px 25px; /* Adds padding to the button (top and bottom: 7px, left and right: 25px) */
+    border-radius: 5px; /* Rounds the corners of the button */
+    background: #f76e11 !important; /* Sets the background color to orange with !important to override other styles */
+    color: #000 !important; /* Sets the text color to black with !important to override other styles */
+    font-size: 0.9rem; /* Sets the font size to 0.9rem (usually in pixels) */
+    margin-top: 30px; /* Adds top margin of 30px to create spacing */
+}
+
+/* Styling for button hover state */
+.btn:hover {
+    color: #fff !important; /* Sets the text color to white on hover with !important to override other styles */
+}
+
+/* Media query for screens with a maximum width of 992px */
+@media only screen and (max-width: 992px) {
+    /* Adjusting font size for h2 elements within .slider__content */
+    .slider__content h2 {
+        font-size: 1.5rem; /* Increases the font size for h2 elements */
+    }
+
+    /* Adjusting font size for p elements within .slider__content */
+    .slider__content p {
+        font-size: 0.8rem; /* Increases the font size for p elements */
+    }
+
+    /* Adjusting padding and font size for .btn elements within .slider__content */
+    .slider__content .btn {
+        padding: 5px 20px; /* Reduces button padding (top and bottom: 5px, left and right: 20px) */
+        font-size: 0.7rem; /* Reduces button font size */
+    }
+}
+
+/* Media query for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+    /* Removing left padding from elements with .slider__content class */
+    .slider__content {
+        padding-left: 0; /* Sets left padding to 0, effectively removing it */
+    }
+
+    /* Hiding previous and next navigation buttons within the slider */
+    .slick-prev,
+    .slick-next {
+        display: none !important; /* Hides the navigation buttons with !important to override other styles */
+    }
+}
+
+/*
+The !important declaration is used to give certain styles higher specificity and ensure they take precedence over other styles that might apply to the same elements. This is often used in CSS when you need to override default or external styles to ensure your styles are applied as intended. However, it's generally recommended to use !important sparingly, as it can make your CSS code more difficult to manage if overused.
+*/

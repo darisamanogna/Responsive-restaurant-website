@@ -1,0 +1,8 @@
+/* Media query for screens with a maximum width of 992 pixels */
+@media only screen and (max-width: 992px) {
+    /* Select the element with the class "popular__menu-title" within this media query */
+    .popular__menu-title {
+        /* Reduce the font size to 1.4rem (rem is a unit for font size) on screens with a maximum width of 992 pixels */
+        font-size: 1.4rem;
+    }
+}

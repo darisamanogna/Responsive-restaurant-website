@@ -1,0 +1,169 @@
+/* This section defines styles for the header element */
+.header {
+    width: 100%; /* Full width */
+    height: 80px; /* Fixed height of 80 pixels */
+    line-height: 80px; /* Vertically center content within the header */
+    position: fixed; /* Fixed position at the top of the viewport */
+    top: 0; /* Fixed at the top */
+    left: 0; /* Fixed at the left */
+    z-index: 9; /* Stack order, determines which elements appear in front. Elements with a higher z-index value are stacked in front of elements with a lower z-index value. */
+    background: #141124; /* Background color */
+}
+
+/* This section defines styles for the navigation container */
+.navigation {
+    display: flex; /* Display as a flex container */
+    align-items: center; /* Vertically center content within the container */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+/* Styles for the logo element within the navigation */
+.logo h2 {
+    margin-bottom: 0; /* Remove bottom margin from the heading */
+}
+
+/* Styles for the navigation list */
+.nav__list {
+    display: flex; /* Display as a flex container */
+    align-items: center; /* Vertically center content within the container */
+    margin-bottom: 0; /* Remove bottom margin */
+    list-style: none; /* Remove list bullets */
+    column-gap: 2.7rem; /* Gap between list items */
+}
+
+/* Styles for navigation list items (links) */
+.nav__item a {
+    color: #fff; /* Text color */
+    cursor: pointer; /* Cursor style */
+    transition: 0.3s; /* Smooth transition effect */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styles for navigation links on hover */
+.nav__item a:hover {
+    color: #f5b70a; /* Text color on hover */
+}
+
+/* Styles for the custom search bar */
+.custom__search {
+    display: flex; /* Display as a flex container */
+    align-items: center; /* Vertically center content within the container */
+    padding: 10px 25px; /* Padding around the search bar */
+    height: 35px; /* Height of the search bar */
+    border-radius: 50px; /* Rounded corners */
+    background: #0a071a; /* Background color */
+}
+
+/* Styles for the input element within the search bar */
+.custom__search input {
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline on focus */
+    background: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+}
+
+/* Styles for the search icon within the search bar */
+.custom__search span i {
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styles for the mobile menu icon */
+.mobile__menu span i {
+    font-size: 1.3rem; /* Font size */
+}
+
+/* Styles for the mobile menu container (initially hidden) */
+.mobile__menu {
+    display: none; /* Initially hidden */
+}
+
+/* Styles for the cart icon and badge */
+.cart__icon {
+    position: relative; /* Positioning */
+    z-index: 999; /* Stack order */
+    width: 40px; /* Width */
+    height: 30px; /* Height */
+    border-radius: 5px; /* Rounded corners */
+    background: #F76E11; /* Background color */
+    display: flex; /* Display as a flex container */
+    align-items: center; /* Vertically center content within the container */
+    justify-content: center; /* Horizontally center content within the container */
+}
+
+/* Styles for the badge within the cart icon */
+.badge {
+    position: absolute; /* Positioning */
+    top: -2px; /* Offset from the top */
+    right: -3px; /* Offset from the right */
+    z-index: 1000; /* Stack order */
+    color: #141124; /* Text color */
+    font-size: 0.8rem; /* Font size */
+    font-weight: 700; /* Font weight */
+}
+
+/* ==================== make it responsive ========================== */
+/*
+This section defines styles for the responsive layout when the screen width is 992px or less:
+*/
+@media only screen and (max-width: 992px) {
+    /* Styles for the navigation menu when the screen is smaller */
+    .nav__menu {
+        position: fixed; /* Fixed position */
+        top: 0; /* Fixed at the top */
+        left: 0; /* Fixed at the left */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        z-index: 99; /* Stack order */
+        background: #0a071a7e; /* Background color with transparency */
+        display: none; /* Initially hidden */
+    }
+
+    /* Styles for the wrapper of the navigation list on smaller screens */
+    .nav__list__wrapper {
+        position: absolute; /* Position the element absolutely within its containing parent */
+        top: 0; /* Align the top edge of the element with the top edge of its containing parent */
+        right: 0; /* Align the right edge of the element with the right edge of its containing parent */
+        width: 250px; /* Set the width of the element to 250 pixels */
+        height: 100%; /* Set the height of the element to 100% of its containing parent's height */
+        z-index: 100; /* Specify the stacking order of the element (higher values appear on top) */
+        background: #141124; /* Set the background color to a dark shade */
+        flex-direction: column; /* Arrange child elements vertically (in a column) */
+        box-shadow: 5px 5px 15px -5px #f5b70a; /* Apply a box shadow with specific settings */
+        justify-content: center !important; /* Vertically center child elements (important to override other styles) */
+        padding: 0px 20px; /* Apply padding (0px top and bottom, 20px left and right) */
+    }
+    .nav__list {
+        flex-direction: column; /* Arrange list items vertically */
+        padding: 0; /* Remove padding */
+    }
+
+    .nav__item a {
+        font-size: 0.9rem; /* Set font size for navigation links */
+    }
+
+    .header {
+        line-height: 40px; /* Set line height for header content */
+        height: 60px; /* Set header height */
+        padding: 10px 0px; /* Apply padding to header content (10px top and bottom, 0px left and right) */
+    }
+
+    .custom__search {
+        border: 1px solid #c4c4c425; /* Add border with a light gray color */
+        padding: 5px 15px; /* Apply padding (5px top and bottom, 15px left and right) */
+        font-size: 0.9rem; /* Set font size for search input */
+        height: 30px; /* Set search input height */
+        margin-top: 15px; /* Apply top margin to create space above the search input */
+    }
+
+    .mobile__menu {
+        display: block; /* Display the mobile menu as a block element */
+    }
+
+    .logo h2 {
+        font-size: 1.5rem; /* Set font size for the logo */
+    }
+
+    .active__menu {
+        display: block; /* Display the element with the 'active__menu' class as a block element */
+    }
+}

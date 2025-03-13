@@ -1,0 +1,88 @@
+/* Styling for a single product container */
+.single__product {
+    background: #141124; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    animation: animate 1s ease-in; /* Animation with a 1-second duration */
+}
+
+/* Styling when hovering over a single product */
+.single__product:hover {
+    box-shadow: 5px 5px 10px -5px #F5B70A; /* Shadow effect on hover */
+}
+
+/* Styling for the product content */
+.product__content {
+    padding: 0px 20px; /* Padding on the sides */
+    padding-bottom: 15px; /* Padding at the bottom */
+}
+
+/* Styling for the product title */
+.product__content h6 {
+    color: #f5b70a; /* Text color */
+    text-align: center; /* Center-align text */
+}
+
+/* Styling for the product rating */
+.rating span i {
+    color: #f76e11; /* Color of rating stars */
+}
+
+.rating {
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+/* Styling for the product price */
+.price {
+    color: #fff; /* Text color */
+}
+
+.price span {
+    color: #f5b70a; /* Color of price value */
+    font-size: 1.3rem; /* Font size of price value */
+    font-weight: 500; /* Font weight of price value */
+}
+
+/* Styling for the shopping cart icon */
+.shopping__icon {
+    width: 30px; /* Width of the icon container */
+    height: 30px; /* Height of the icon container */
+    border-radius: 5px; /* Rounded corners for the icon container */
+    background: #f76e11; /* Background color of the icon container */
+    display: flex; /* Flexbox for icon alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Keyframes animation named 'animate' */
+/*
+@keyframes animate: This defines a keyframes animation named 'animate'. Keyframes are a way to specify a sequence of CSS property values to be applied during an animation. In this case, the animation is given the name 'animate' for reference.
+from: This represents the starting point of the animation. It specifies the initial values for CSS properties when the animation begins. Here, it sets the transform property to scale(0), which means the element is initially scaled down to nothing, effectively invisible.
+to: This represents the ending point of the animation. It specifies the final values for CSS properties when the animation ends. In this case, it sets the transform property to scale(1), which means the element is scaled up to its normal size, making it visible and fully scaled.
+So, in summary, this keyframes animation named 'animate' starts with an element scaled down to nothing (scale(0)) and gradually scales it up to its normal size (scale(1)) over the duration of the animation. This creates a scaling effect, which can be applied to elements to make them appear or disappear smoothly.
+*/
+@keyframes animate {
+    from {
+        transform: scale(0); /* Initial scale */
+    }
+
+    to {
+        transform: scale(1); /* Final scale */
+    }
+}
+
+/* Media query for screens with a maximum width of 767 pixels */
+@media only screen and (max-width: 767px) {
+    .product__content h6 {
+        font-size: 0.9rem; /* Smaller font size for the product title */
+    }
+
+    .price {
+        font-size: 0.8rem; /* Smaller font size for the price text */
+    }
+
+    .price span {
+        font-size: 0.9rem; /* Smaller font size for the price value */
+    }
+}

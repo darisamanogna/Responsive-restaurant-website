@@ -1,0 +1,62 @@
+/* Remove padding from the bottom of the footer */
+.footer {
+    padding-bottom: 0; /* No padding at the bottom */
+}
+
+/* Style for footer link titles */
+.footer__link-title {
+    color: #fff; /* White text color */
+    margin-left: 15px; /* Add left margin for alignment with list items */
+}
+
+/* Styling for list items within the footer */
+.link__item {
+    /* Adjust the padding to create space on the left */
+    padding-left: 15px; /* Add some left padding */
+    background: transparent !important; /* Set background as transparent */
+    color: #c4c4c4 !important; /* Text color as light gray */
+    border-color: transparent !important; /* Transparent border color */
+}
+
+/* Style for anchor tags within list items */
+.link__item a {
+    color: #c4c4c4; /* Light gray text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for the bottom part of the footer */
+.footer__bottom {
+    background: #141124; /* Dark background color */
+    padding: 20px 0px; /* Padding top and bottom */
+    text-align: center; /* Center-align text */
+    margin-top: 50px; /* Add margin at the top */
+}
+
+/* Style for text within the bottom part of the footer */
+.footer__bottom p {
+    font-size: 0.9rem; /* Font size */
+    margin-bottom: 0; /* Remove margin at the bottom */
+}
+
+/* Media query for screens with a maximum width of 992px */
+@media only screen and (max-width: 992px) {
+    /* Adjust font size for anchor tags within list items */
+    .link__item a {
+        font-size: 0.8rem; /* Reduce font size */
+    }
+
+    /* Adjust font size for list items */
+    .link__item {
+        font-size: 0.8rem; /* Reduce font size */
+    }
+
+    /* Adjust font size for text within the bottom part of the footer */
+    .footer__bottom p {
+        font-size: 0.7rem; /* Reduce font size */
+    }
+
+    /* Adjust padding for the bottom part of the footer */
+    .footer__bottom {
+        padding: 15px 0px; /* Reduce top and bottom padding */
+    }
+}

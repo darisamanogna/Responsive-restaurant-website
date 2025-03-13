@@ -1,0 +1,114 @@
+/* Set the background color and border radius for .app__container */
+.app__container {
+    background: #f5b70a; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Adjust the margin to reposition .app__img */
+.app__img {
+    margin-bottom: -100px; /* Move the image upwards */
+}
+
+/* Define styles for the heading within .app__content */
+.app__content h5 {
+    color: #0a071a; /* Text color */
+}
+
+/* Style the main heading within .app__content */
+.app__content h2 {
+    color: #0a071a !important; /* Text color (with importance) */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Add padding to the top of .app__content */
+.app__content {
+    padding-top: 50px; /* Space above the content */
+}
+
+/* Set the text color for paragraphs within .app__content */
+.app__content p {
+    color: #fff; /* Text color */
+}
+
+/* Style the button with the class .btn__apple */
+.btn__apple {
+    background: #0a071a; /* Button background color */
+    border: none; /* Remove button border */
+    color: #fff; /* Text color */
+    padding: 7px 25px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the button with the class .btn__google */
+.btn__google {
+    background: #fff; /* Button background color */
+    color: #0a071a; /* Text color */
+    border: none; /* Remove button border */
+    padding: 7px 25px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Set the color of the icon within .btn__google */
+.btn__google i {
+    color: #0a071a; /* Icon color */
+}
+
+/* Change the link color when hovering over .btn__apple */
+.btn__apple:hover a {
+    color: #fff; /* Link color on hover */
+}
+
+/* Change the link color when hovering over .btn__google */
+.btn__google:hover a {
+    color: #0a071a; /* Link color on hover */
+}
+
+/* Media query for screens with a maximum width of 992px */
+@media only screen and (max-width: 992px) {
+    /* Adjust the width of the image within .app__img */
+    .app__img img {
+        width: 100%; /* Make the image fill its container */
+    }
+
+    /* Modify the font size for .app__content h5 */
+    .app__content h5 {
+        font-size: 1rem; /* Adjust heading font size */
+    }
+
+    /* Modify the font size for .app__content h2 */
+    .app__content h2 {
+        font-size: 1.5rem; /* Adjust main heading font size */
+        margin-bottom: 15px !important; /* Change margin (with importance) */
+    }
+
+    /* Adjust font size and line height for paragraphs in .app__content */
+    .app__content p {
+        font-size: 0.7rem; /* Adjust paragraph font size */
+        line-height: 25px; /* Set line height */
+    }
+
+    /* Adjust padding and font size for buttons */
+    .btn__apple,
+    .btn__google {
+        padding: 5px 20px; /* Adjust button padding */
+        font-size: 0.8rem; /* Adjust button font size */
+    }
+
+    /* Add padding to the bottom of .app__content */
+    .app__content {
+        padding-bottom: 50px; /* Space below the content */
+    }
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    /* Adjust padding for .app__content */
+    .app__content {
+        padding: 30px; /* Change padding */
+    }
+
+    /* Reset margin for .app__img */
+    .app__img {
+        margin-bottom: 0; /* Reset image margin */
+    }
+}
